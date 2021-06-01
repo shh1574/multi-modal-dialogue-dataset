@@ -4,12 +4,12 @@ We present a 45k multi-modal dialogue dataset and the dataset creation method. T
 
 ## Link to the dataset
 
-The dataset can be found at [drive_link](https://drive.google.com/drive/folders/12-Zz4MJTASJVlbncpSWvBVqLDe5_m5QU?usp=sharing).
+The dataset can be found at [here](https://drive.google.com/drive/folders/12-Zz4MJTASJVlbncpSWvBVqLDe5_m5QU?usp=sharing).
 
 ## Dataset Details
 
 There are 3 files in the above link. Each zip(or egg) file compressed json and npy format files for training and evaluation.
-Each line in the json file is a json consisting the following keys:`
+Each line in the json file is a json consisting the following keys:
 | Key | Description |
 |:--- |:---         |
 | dialog  | Dialogue context and response |
@@ -20,8 +20,6 @@ Each line in the json file is a json consisting the following keys:`
 | dialog_file | Used file name in the source dialogue dataset |
 | img_dataset | Source image dataset |
 | img_file | Used file name in the source image dataset |
-
-{"dialog": ["hello , how are you tonight ?", "i am tired . i played all day long .", "what did you play ? i walked dogs for nine miles total .", "i played with my toys in my room .", "do you like dogs ? i have three .", "yes . i like dogs . what kind are they ?", "i have a lab and a mixed breed .", "my best friend has a cat . she lives next door to me .", "i like cats . do you play with her a lot ?", "yes . we play with our dolls together . how old are you ?", "i am 26 . do you need a babysitter ?", "i am only four years old . i do not like my babysitter .", "tell your parents . you should always like the one who is watching you .", "she gets mad at me when i do not clean my room ."], "replaced_idx": 4, "img_idx": 62, "score": 0.5801908360436532, "dialog_dataset": "persona", "dialog_file": "chat10005.txt", "img_dataset": "coco", "img_file": "COCO_val2014_000000283210.jpg"}
 
 ## Source Dataset Details
 
