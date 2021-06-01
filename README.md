@@ -33,7 +33,37 @@ We provide download and paper links of all our source datasets.
 
 ## Code Details 
 
-TBD
+Before running our code, you have to create Anaconda environment using given enviroment.yaml file.
+
+```bash
+conda env create --file environment.yaml
+```
+
+we provide two source code sets, similarity-prediction and dialogue-prediction.
+
+With similarity-prediction source code, you can calculate the similarities between source dialogue dataset and image dataset using pretrained VSRN weight.
+With dialogue-prediction source code, you can run the current and next dialogue prediction task using our multi-modal dialogue dataset as in the paper.
+
+#### 1. Similarity Prediction
+To directly run our similarity-prediction code, you have to download all source dialogue, image datasets, and weight of pre-trained VSRN. Especially for image dataset, we use pre-processed image features in which bottom-up attention is applied. You can download the all image features in here, and the weight of pre-trained VSRN in here.  
+After downloading all the necessary dataset and weights in to the dataset directory, then run calculating_similarity.py:
+
+```bash
+python similarity-prediction/calculating_similarity.py
+```
+
+#### 2. Dialogue Prediction
+To run our current and next dialogue prediction task, you have to download our multi-modal dialogue dataset in to the dataset directory. Then, run predicting_dialogue.py:
+
+For current turn prediction task:
+```bash
+python dialog-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task current
+```
+
+For next turn prediction task:
+```bash
+python dialog-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task next
+```
 
 ## References
 If you find the data useful and use it for your work, please consider citing the following:
