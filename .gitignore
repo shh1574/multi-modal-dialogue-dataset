@@ -1,0 +1,7 @@
+*.npy
+output/
+dataset/
+vsrn/dataset/persona_stopwords/
+vsrn/dataset/empathy_stopwords/
+vsrn/dataset/dailydialog_stopwords/
+__pycache__/
