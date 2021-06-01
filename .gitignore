@@ -1,7 +1,8 @@
 *.npy
 output/
-dataset/
-vsrn/dataset/persona_stopwords/
-vsrn/dataset/empathy_stopwords/
-vsrn/dataset/dailydialog_stopwords/
+dataset/persona_stopwords/
+dataset/empathy_stopwords/
+dataset/dailydialog_stopwords/
+dataset/*.txt
+dataset/*.tar
 __pycache__/
