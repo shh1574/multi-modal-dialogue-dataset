@@ -25,7 +25,7 @@ class FinetuneDataset(data.Dataset):
         self.threshold_img_idx = []
 
         json_idx = []
-        with open(loc + 'MultiModalDialogue_{}.json'.format(data_split), 'r') as f:
+        with open(loc + '{}.json'.format(data_split), 'r') as f:
             json_data = jsonmod.load(f)
             for i, instance in enumerate(json_data):
                 replaced_idx = instance['replaced_idx']
@@ -46,7 +46,7 @@ class FinetuneDataset(data.Dataset):
                 self.contexts.append(context)
                 self.targets.append(target)
 
-        self.images = np.load(loc + 'MultiModalDialogue_{}_ims.npy'.format(data_split))
+        self.images = np.load(loc + '{}_ims.npy'.format(data_split))
         self.images = self.images[json_idx]
         self.length = len(self.targets)
 

@@ -216,7 +216,7 @@ def validate(opt, val_loader, model, epoch, mode, split):
                  (r1, r5, r10, medr, meanr))
 
     if mode == 'inference':
-        dataset = json.load(open(os.path.join(opt.data_path, 'MultiModalDialogue_test.json'), encoding='utf-8'))
+        dataset = json.load(open(os.path.join(opt.data_path, 'test.json'), encoding='utf-8'))
         candidates = []
         for d in dataset:
             dialog = d['dialog']
