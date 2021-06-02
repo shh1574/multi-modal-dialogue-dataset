@@ -42,17 +42,17 @@ Before running our code, you have to create Anaconda environment using given env
 conda env create --file environment.yaml
 ```
 
-we provide two source code sets, similarity-prediction and dialogue-prediction.
+we provide two source code sets, similarity-calculation and dialogue-prediction.
 
-With similarity-prediction source code, you can calculate the similarities between source dialogue dataset and image dataset using pretrained VSRN weight.
+With similarity-calculation source code, you can calculate the similarities between source dialogue dataset and image dataset using pretrained VSRN weight.
 With dialogue-prediction source code, you can run the current and next dialogue prediction task using our multi-modal dialogue dataset as in the paper.
 
-#### 1. Similarity Prediction
-To directly run our similarity-prediction code, you have to download all source dialogue, image datasets, and weight of pre-trained VSRN. Especially for image dataset, we use pre-processed image features in which bottom-up attention is applied. You can download the all image features in [here](TBD), and the weight of pre-trained VSRN in [here](https://drive.google.com/drive/folders/1zUgma0SD4Dp3b3n55pv7QAsTBFRF_6m8?usp=sharing).  
+#### 1. Similarity Calculation
+To directly run our similarity-calculation code, you have to download all source dialogue, image datasets, and weight of pre-trained VSRN. Especially for image dataset, we follow [VSRN](https://github.com/KunpengLi1994/VSRN) that uses pre-processed image features in which bottom-up attention is applied. You can find the download link for the all image features and the weight of pre-trained VSRN in [here](https://github.com/KunpengLi1994/VSRN).   
 After downloading all the necessary dataset and weights in to the dataset directory, then run calculating_similarity.py:
 
 ```bash
-python similarity-prediction/calculating_similarity.py
+python similarity-calculation/calculating_similarity.py
 ```
 
 #### 2. Dialogue Prediction
@@ -60,12 +60,12 @@ To run our current and next dialogue prediction task, you have to download our m
 
 For current turn prediction task:
 ```bash
-python dialog-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task current
+python dialogue-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task current
 ```
 
 For next turn prediction task:
 ```bash
-python dialog-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task next
+python dialogue-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu_id $GPU_ID --task next
 ```
 
 ## References
