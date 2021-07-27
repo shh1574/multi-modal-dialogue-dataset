@@ -71,15 +71,20 @@ python dialogue-prediction/predicting_dialogue.py --model_name $MODEL_NAME --gpu
 ## References
 If you find the data useful and use it for your work, please consider citing the following:
 
-TBD
-
-<!-- ```
-@misc{kumar2020clarq,
-    title={ClarQ: A large-scale and diverse dataset for Clarification Question Generation},
-    author={Vaibhav Kumar and Alan W. black},
-    year={2020},
-    eprint={2006.05986},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+```
+@inproceedings{lee-etal-2021-constructing,
+    title = "Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images",
+    author = "Lee, Nyoungwoo  and
+      Shin, Suwon  and
+      Choo, Jaegul  and
+      Choi, Ho-Jin  and
+      Myaeng, Sung-Hyon",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.113",
+    pages = "897--906",
 }
-``` -->
+```
