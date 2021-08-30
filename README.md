@@ -1,6 +1,6 @@
 # Constructing Multi-Modal Dialogue Dataset by Replacing Text with Semantically Relevant Images
 
-We present a 45k multi-modal dialogue dataset and the dataset creation method. This dataset is meant for training and evaluating multi-modal dialogue systems. Each multi-modal dialogue instance consists of a textual response and a dialogue context with multiple text utterances and an image. The details used in our creation method can be found in the [paper](TBD). The work was published in ACL 2021.
+We present a 45k multi-modal dialogue dataset and the dataset creation method. This dataset is meant for training and evaluating multi-modal dialogue systems. Each multi-modal dialogue instance consists of a textual response and a dialogue context with multiple text utterances and an image. The details used in our creation method can be found in the [paper](https://aclanthology.org/2021.acl-short.113.pdf). The work was published in ACL 2021.
 
 ## Link to the dataset
 
